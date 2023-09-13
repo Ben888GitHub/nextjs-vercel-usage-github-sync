@@ -1,0 +1,2 @@
+Command:
+gh repo create <your-repo-name> --public --clone && cd <your-repo-name> && git branch -m main && npx create-next-app@latest . && vercel git connect && open https://github.com/Ben888GitHub?tab=repositories https://vercel.com/dashboard
