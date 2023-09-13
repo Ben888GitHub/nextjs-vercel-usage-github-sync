@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const vercel_url = process.env.NEXT_PUBLIC_URL;
+
 export default function Home() {
 	return (
 		<main
@@ -16,6 +18,7 @@ export default function Home() {
 					'gh repo create <your-repo-name>  --public --clone && cd <your-repo-name> && git branch -m main && npx create-next-app@latest .  && vercel git connect'
 				}
 			</p>
+			<p className="text-2xl">{vercel_url}</p>
 		</main>
 	);
 }
